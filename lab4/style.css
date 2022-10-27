@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  font-family: "Caladea", serif;
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  max-width: 1250px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.main {
+  background: rgb(245, 166, 232);
+  background: linear-gradient(
+    90deg,
+    rgba(245, 166, 232, 1) 0%,
+    rgba(181, 237, 244, 1) 52%
+  );
+}
+.title {
+  font-size: 50px;
+  padding-top: 40px;
+  text-align: center;
+  color: #f128f4;
+}
+.text {
+  display: block;
+  font-size: 22px;
+  margin-top: 5px;
+  padding: 0 10px;
+  text-align: center;
+}
+.cards {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  padding-bottom: 62px;
+}
+.card-item {
+  position: relative;
+  width: 29%;
+  border-radius: 1rem;
+  background-color: rgba(255, 253, 253, 0.985);
+}
+.card-image {
+  position: absolute;
+  display: block;
+}
+.shadow {
+  margin: 0 auto;
+  display: block;
+  margin-top: 30%;
+  width: 45%;
+}
+.circle {
+  transform: translate(64%, -55%);
+
+  width: 45%;
+}
+.triangle {
+  transform: translate(29%, -55%);
+
+  width: 65%;
+}
+.half-circle {
+  transform: translate(36%, -55%);
+
+  width: 60%;
+}
+.card-title {
+  font-weight: bold;
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #f128f4;
+}
+.card-text {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: rgb(161, 160, 160);
+  line-height: 1.5em;
+}
+.btn {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  margin: 0 auto;
+  padding: 10px 25px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  border: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(38, 237, 154, 1) 8%,
+    rgba(237, 84, 240, 1) 52%
+  );
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  cursor: pointer;
+  color: black;
+  transform: scale(1.05);
+}
+.footer {
+  background-color: rgb(45, 41, 41);
+}
+.footer-text {
+  padding: 40px 10px;
+  display: flex;
+  font-size: 18px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 846px) {
+  .cards {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .card-item {
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .title {
+    font-size: 35px;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+}
