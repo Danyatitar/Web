@@ -99,7 +99,7 @@ submit_update_btn.addEventListener("click", async () => {
       error_update_exist.classList.remove("hidden");
     } else {
       error_update_exist.classList.add("hidden");
-      alert(`Notification with title ${update_title.value} was updates`);
+      alert(`Notification with title ${update_title.value} was updated`);
     }
   }
 });
