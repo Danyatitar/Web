@@ -11,8 +11,8 @@ function createNotification(title, description, color, font, id) {
     <i  class="check" style="background-color: ${color}"></i>
     
     <div class="message">
-      <span  class="text text-1" style="font: ${font}">${title}</span>
-      <span   class="text text-2" style="font: ${font}">${description}</span>
+      <span  class="text text-1" style="font-size: ${font}">${title}</span>
+      <span   class="text text-2" style="font-size: ${font}">${description}</span>
     </div>
     </div>`;
 
