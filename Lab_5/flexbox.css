@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei UI";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex-item {
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-left: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+.list {
+  text-align: center;
+  padding-top: 20px;
+  width: 200px;
+  margin: 0 auto;
+}
+.add-input {
+  margin-top: 20px;
+  text-align: center;
+}
+.add-list {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.first,
+.seventh {
+  width: 80%;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 65%;
+  min-width: min-content;
+}
+.first {
+  justify-content: end;
+  padding-left: 0px;
+  padding-right: 30px;
+}
+.second {
+  padding: 10px;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  background-color: #fde9d9;
+  border: solid 1px #ccc;
+}
+.third {
+  text-align: center;
+  padding-top: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #eaf1dd;
+  border-top: solid 1px #ccc;
+  min-height: 10vh;
+}
+.fourth {
+  padding: 10px;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  background-color: #fde9d9;
+  border: solid 1px #ccc;
+}
+.fifth {
+  padding: 10px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+  justify-content: center;
+  flex-direction: column;
+  border-top: solid 1px #ccc;
+}
+
+.sixth {
+  padding: 10px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #eaf1dd;
+  border-bottom: solid 1px #ccc;
+  min-height: 10vh;
+  border: solid 1px #ccc;
+}
+
+.seventh {
+  font-size: 15px;
+}
+
+.header {
+  padding: 0 10px;
+  padding-top: 30px;
+  width: 100%;
+  min-height: 14vh;
+  background-color: #c6d9f1;
+  flex-direction: row;
+  justify-content: space-between;
+  border: solid 1px #ccc;
+}
+.footer {
+  padding: 0 10px;
+  padding-top: 30px;
+  width: 100%;
+  min-height: 14vh;
+  display: flex;
+  background-color: #c6d9f1;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 1px #ccc;
+}
+header {
+  text-align: right;
+}
+#img_main {
+  height: 350px;
+  width: 350px;
+  border-radius: 80px;
+  padding: 1.5%;
+}
+
+.btn {
+  margin-left: 30px;
+  width: 400px;
+  padding: 20px 0px 20px 20px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  height: min-content;
+  align-self: center;
+}
+.link {
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 35px;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.footer-btn {
+  width: 400px;
+  padding: 20px 0px 20px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  height: min-content;
+  align-self: center;
+  margin-right: 30px;
+}
+.align-items {
+  display: block;
+  margin-top: 25px;
+}
+.inputs {
+  margin-top: 20px;
+}
+.input-title,
+.number-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.height,
+.width,
+.number-input-content {
+  padding: 5px;
+  font-size: 16px;
+}
+.result-btn,
+.save-btn,
+.add-btn {
+  border-radius: 1rem;
+  padding: 7px 10px;
+  font-size: 16px;
+  background-color: #eaf1dd;
+}
+.error {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+.result {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.main-btns {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.swap-btn,
+.calc-btn,
+.number-btn {
+  border-radius: 1rem;
+  padding: 7px 20px;
+  font-size: 20px;
+  background-color: #eaf1dd;
+}
+.swap-btn:hover,
+.calc-btn:hover,
+.result-btn:hover,
+.number-btn:hover,
+.save-btn:hover {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+@media screen and (max-width: 1025px) {
+  main {
+    flex-direction: column;
+  }
+  .flex-item {
+    font-size: 20px;
+  }
+  .item-7 {
+    font-size: 10px;
+  }
+  #img_main {
+    height: 300px;
+    width: 300px;
+  }
+  .second {
+    padding-bottom: 30px;
+  }
+  .footer-title {
+    font-size: 20px;
+  }
+  .link {
+    font-size: 20px;
+  }
+}
